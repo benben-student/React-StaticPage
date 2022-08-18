@@ -1,0 +1,16 @@
+{
+  "id": "3597726",
+  "name": "zhuanfa",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7417089",
+      "name": "转发",
+      "font_class": "zhuanfa",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    }
+  ]
+}
