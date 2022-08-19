@@ -45,20 +45,10 @@ class SwitchLanguage extends React.Component {
         )
     }
 }
-//白天
-const day = {
-    backgroundColor: "white"
-}
-
-//夜晚
-const night = {
-    backgroundColor: "black"
-}
 class Header extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            data: day,
             inputValue: ''
         }
     }
@@ -67,23 +57,20 @@ class Header extends React.Component {
             inputValue: e.target.value
         })
     }
-    handleBackground = () => {
-       
-    }
     render() {
         const textColor = {
             fontSize: "12px",
-            color: "#ccc"
+            color: "#a8a8ad"
         }
         const textSize = {
-            fontSize: "20px"
+            fontSize: "17px",
         }
         return (
             <Fragment>
                 <div className="header-left">
                     <div><a><img height="50px" width="auto" src="https://gw.alipayobjects.com/zos/bmw-prod/b874caa9-4458-412a-9ac6-a61486180a62.svg" /></a></div>
-                    <div><h4 style={textSize}>Antd Design Mobile</h4></div>
-                    <div><h5 style={textColor}>v5.21.0</h5></div>
+                    <div><p style={textSize}>Antd Design Mobile</p></div>
+                    <div><p style={textColor}>v5.21.0</p></div>
                     <div>
                         <input className="header-input" type="search" value={this.state.inputValue} onChange={this.handleClickValue} />
                         <span className="iconfont icon-shurukuangsousuo"></span>

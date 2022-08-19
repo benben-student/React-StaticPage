@@ -1,4 +1,5 @@
 .header-left {
+    height: 12%;
     width: 100%;
     margin-left: 10px;
     display: flex;
@@ -10,48 +11,58 @@
     background: #fff;
     border-bottom: 1px solid #eee;
 }
-.header-right{
+
+.header-right {
     position: absolute;
     right: 10%;
 }
-.header-right span{
+
+.header-right span {
     margin-right: 25px;
     font-size: 14px;
 }
-.header-right button{
+
+.header-right button {
     border: 1px solid #999;
     height: 30px;
     border-radius: 14px;
     background-color: #fff;
 }
-.header-right span:hover{
+
+.header-right span:hover {
     color: blue;
 }
+
 .header-left div {
     margin-left: 10px;
     display: block;
 }
-.header-right-button{
+
+.header-right-button {
     position: absolute;
     right: 60px;
     z-index: 1;
     font-size: 16px;
-    top: 34px;
+    top: 15px;
 }
-.header-right-button button{
+
+.header-right-button button {
     height: 30px;
     margin-left: 10px;
     background-color: #fff;
 }
-.header-right-button button:hover{
+
+.header-right-button button:hover {
     background-color: #f5f5f5;
 }
-.header-right-button-button-a{
+
+.header-right-button-button-a {
     width: 75px;
     border: 1px solid #ccc;
     border-radius: 12px;
 }
-.header-right-button-button-b{
+
+.header-right-button-button-b {
     border: 1px solid #ccc;
     border-radius: 15px;
     width: 30px;
@@ -60,9 +71,11 @@
     height: 30px;
     background-color: #fff;
 }
-.header-right-button-button-b:hover{
+
+.header-right-button-button-b:hover {
     background-color: #f5f5f5;
 }
+
 .header-input {
     width: 200px;
     height: 32px;
@@ -71,9 +84,10 @@
     font-size: 14px;
     transition: all .2s;
     border-radius: 16px;
+    outline-offset: 1px;
     border: none;
     outline-color: blue;
-    outline-width: 1px;
+    border: 1px solid;
 }
 
 .icon-shurukuangsousuo {
