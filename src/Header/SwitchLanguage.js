@@ -49,12 +49,33 @@ class Header extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            inputValue: ''
+            inputValue: '',
+            statusA: false,
+            statusB: false,
+            statusC: false,
         }
     }
     handleClickValue = (e) => {
         this.setState({
             inputValue: e.target.value
+        })
+    }
+    handleBottomA = () => {
+        const data = this.state.statusA === false ? true : false
+        this.setState({
+            statusA: data
+        })
+    }
+    handleBottomB = () => {
+        const data = this.state.statusB === false ? true : false
+        this.setState({
+            statusB: data
+        })
+    }
+    handleBottomC = () => {
+        const data = this.state.statusC === false ? true : false
+        this.setState({
+            statusC: data
         })
     }
     render() {
@@ -79,9 +100,9 @@ class Header extends React.Component {
                         {
                             data => (
                                 <div className="header-right">
-                                    <span>{data.guide}</span>
-                                    <span>{data.assembly}</span>
-                                    <span>{data.resources}</span>
+                                    <span><div className={this.state.statusA === true ? "header-right-span-bottom" : ""} onClick={this.handleBottomA}>{data.guide}</div></span>
+                                    <span><div className={this.state.statusB === true ? "header-right-span-bottom" : ""} onClick={this.handleBottomB}>{data.assembly}</div></span>
+                                    <span><div className={this.state.statusC === true ? "header-right-span-bottom" : ""} onClick={this.handleBottomC}>{data.resources}</div></span>
                                     <span>{data.oldVersion}</span>
                                     <span className="header-right-span">{data.PublishLog}<span className="iconfont icon-zhuanfa"></span></span>
                                     <span className="header-right-span">GitHub<span className="iconfont icon-zhuanfa"></span></span>
