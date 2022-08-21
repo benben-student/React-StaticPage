@@ -1,0 +1,85 @@
+.bodypage {
+    position: relative;
+    top: 55px;
+}
+
+.bodypage-spanB {
+    position: absolute;
+    right: -100px;
+}
+
+.bodypage-span-div-pA {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.bodypage-span-div-pB {
+    font-size: 20px;
+    color: rgba(0, 0, 0, .85);
+}
+
+.bodypage-div-div {
+    height: 577px;
+}
+
+.bodypage-div-div div {
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
+.bodypage-span-div-button button {
+    font-size: 16px;
+    height: 47px;
+    width: 137px;
+    border-radius: 25px;
+}
+
+.bodypage-span-div-button-buttonA {
+    color: white;
+    border: 1px solid #1677ff;
+    background-color: #1677ff;
+}
+
+.bodypage-span-div-button-buttonB {
+    margin-left: 25px;
+    border: 1px solid #1677ff;
+    background-color: white;
+    color: #1677ff;
+}
+
+.bodypage-div-div {
+    display: inline-block
+}
+
+.bodypage-div--div-A div ul p {
+    font-size: 24px;
+    color: #697a8c;
+}
+
+.bodypage-div--div-A div ul {
+    position: relative;
+    left: -150px;
+    width: 101%;
+    text-align: center;
+    padding: 20px 200px 20px 200px;
+}
+
+.bodypage-div--div-A div ul li {
+    position: relative;
+    margin-right: 110px;
+    width: 231px;
+    height: 211px;
+    text-align: center;
+    display: inline-block;
+}
+
+.bodypage-div--div-A div ul li p {
+    font-size: 14px;
+    color: #697a8c;
+}
+
+.bodypage-div--div-A div ul li div p {
+    font-size: 16px;
+    color: black;
+}

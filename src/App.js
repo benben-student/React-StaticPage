@@ -1,12 +1,13 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 import './App.css';
+import BodyPage from './Body/BodyPage';
 import SwitchLanguage from './Header/SwitchLanguage';
-import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <div>
+    <Fragment>
       <SwitchLanguage/>
-    </div>
+      <BodyPage/>
+    </Fragment>
   );
 }
 export default App;
