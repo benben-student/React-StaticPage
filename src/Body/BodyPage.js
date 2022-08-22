@@ -8,8 +8,23 @@ import imgF from "../Body/img/06.svg"
 import imgG from "../Body/img/07.svg"
 import imgH from "../Body/img/08.svg"
 import imgI from "../Body/img/09.svg"
+import imgJ from "../Body/img/10.svg"
+import imgK from "../Body/img/11.svg"
+import imgL from "../Body/img/12.svg"
+import imgM from "../Body/img/13.svg"
+import imgN from "../Body/img/14.svg"
+import imgO from "../Body/img/15.svg"
+import imgP from "../Body/img/16.svg"
+import imgW from "../Body/img/17.svg"
+import imgX from "../Body/img/02.png"
 import './index.css'
 class BodyPage extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            Symbol: ">"
+        }
+    }
     render() {
         return (
             <div className="bodypage">
@@ -62,12 +77,12 @@ class BodyPage extends React.Component {
                         <div>开发资源</div>
                         <ul>
                             <li>
-                                <span className="bodypage-div-ul-li-spanA">在线体验</span><span className="bodypage-div-ul-li-spanB">开始体验</span>
+                                <span className="bodypage-div-ul-li-spanA">在线体验</span><span className="bodypage-div-ul-li-spanB">开始体验{this.state.Symbol}</span>
                                 <p>在 Codesandbox 上在线体验，无需安装和配置环境</p>
                                 <img src={imgF} />
                             </li>
                             <li>
-                                <span className="bodypage-div-ul-li-spanA">组件列表</span><span className="bodypage-div-ul-li-spanB">查看全部</span>
+                                <span className="bodypage-div-ul-li-spanA">组件列表</span><span className="bodypage-div-ul-li-spanB">查看全部{this.state.Symbol}</span>
                                 <p>基于蚂蚁集团的众多业务实践，抽象构建出移动端资产库</p>
                                 <img src={imgG} />
                             </li>
@@ -83,7 +98,7 @@ class BodyPage extends React.Component {
                                     <li>
                                         <span >快速上手</span>
                                         <p>轻松两步，快速实现安装和引入组件，Ant Design Mobile 自动加载 CSS 样式文件</p>
-                                        <div >查看详情</div>
+                                        <div >查看详情{this.state.Symbol}</div>
                                     </li>
                                     <img src={imgH} />
                                 </li>
@@ -91,7 +106,7 @@ class BodyPage extends React.Component {
                                     <li>
                                         <span >常见问题</span>
                                         <p>我们为你整理了一些常见的问题，遇到疑问不妨先来查阅一下</p>
-                                        <div >FAQ</div>
+                                        <div >FAQ{this.state.Symbol}</div>
                                     </li>
                                     <img src={imgI} />
                                 </li>
@@ -99,8 +114,54 @@ class BodyPage extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div>5</div>
-                <div>6</div>
+                <div>
+                    <div className="bodypage-divA">
+                        <div className="bodypage-divA-div">谁在使用</div>
+                        <div className="bodypage-divB-div">
+                            <span><img src={imgJ} /></span>
+                            <span><img src={imgK} /></span>
+                            <span><img src={imgL} /></span>
+                            <span><img src={imgM} /></span>
+                            <span><img src={imgN} /></span>
+                            <span><img src={imgO} /></span>
+                            <span className="bodypage-divB-div-span"><img src={imgP} /></span>
+                            <span><img src={imgW} /></span>
+                        </div>
+                    </div>
+                </div>
+                <div className="bodypage-divD">
+                    <ul>
+                        <li>
+                            <p>Ant Design Mobile</p>
+                            <p>GitHub</p>
+                            <p>发布日志</p>
+                            <p>Roadmap</p>
+                            <p>参与贡献</p>
+                            <p>提问与反馈</p>
+                            <p>博客</p>
+                        </li>
+                        <li>
+                            <p>Ant Design</p>
+                            <p>Ant Design - 桌面端组件库</p>
+                            <p>Ant Design Pro - 中台解决方案</p>
+                            <p>Ant Motion - 设计动效</p>
+                            <p>Ant Design Charts</p>
+                        </li>
+                        <li>
+                            <p>更多产品</p>
+                            <p>ahooks - React Hooks 库</p>
+                            <p>Dumi - 组件/文档研发工具</p>
+                            <p>Kitchen - Sketch 工具集</p>
+                            <p>AntV - 蚂蚁数据可视化方案</p>
+                            <p>Egg - 企业级 Node Web 开发框架</p>
+                        </li>
+                        <li>
+                            <p>钉钉交流反馈群</p>
+                            <img height="273px" width="240px" src={imgX} />
+                        </li>
+                    </ul>
+                    <div className="bodypage-divD-div">Open-source MIT Licensed | Copyright © 2016-present Alipay.com | Powered by<span>dumi</span></div>
+                </div>
             </div>
         )
     }

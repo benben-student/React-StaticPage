@@ -32,7 +32,7 @@
 
 .bodypage-div-div div {
     position: relative;
-    top: 13%;
+    top: 25%;
     left: 17%;
 }
 
@@ -92,7 +92,7 @@
     color: black;
 }
 
-.bodypage-div-ulB div div{
+.bodypage-div-ulB div div {
     position: relative;
     left: -35%;
     font-size: 24px;
@@ -104,7 +104,7 @@
     display: inline-block;
     width: 576px;
     height: 380px;
-    background-color: rgba(223,246,255,.3);
+    background-color: rgba(223, 246, 255, .3);
 }
 
 .bodypage-div-ulB ul li p {
@@ -131,58 +131,134 @@
     color: #3978ff;
 }
 
-.bodypage-div-ulB-div{
+.bodypage-div-ulB-div {
     text-align: center;
 }
-.bodypage-div-ulB ul li img{
+
+.bodypage-div-ulB ul li img {
     position: relative;
     bottom: -31%;
 }
 
-.bodypage-div-ulC li{
+.bodypage-div-ulC li {
     display: inline-block;
 }
-.bodypage-div-ulC ul li{
+
+.bodypage-div-ulC ul li {
     width: 505px;
     height: 185px;
     justify-content: center;
 }
 
-.bodypage-div-ulC ul li li{
+.bodypage-div-ulC ul li li {
     width: 200px;
 }
-.bodypage-div-ulC ul li li span{
+
+.bodypage-div-ulC ul li li span {
     font-size: 20px;
-    color: rgba(0,0,0,.85);
+    color: rgba(0, 0, 0, .85);
 }
-.bodypage-div-ulC ul li li p{
+
+.bodypage-div-ulC ul li li p {
     font-size: 14px;
     color: #697a8c;
     width: 262px;
 }
-.bodypage-div-ulC ul li li div{
+
+.bodypage-div-ulC ul li li div {
     font-size: 14px;
     color: #1677ff;
     position: relative;
     top: 30px;
 }
-.bodypage-div-ulC-div{
+
+.bodypage-div-ulC-div {
     position: relative;
     left: 8%;
+    top: 50px;
 }
-.bodypage-div-ulC-div div{
+
+.bodypage-div-ulC-div div {
     font-size: 24px;
     color: #697a8c
 }
-.bodypage-div-ulC-ul{
+
+.bodypage-div-ulC-ul {
     margin-left: 50px;
     background: #fff;
     box-shadow: 0 4px 10px 0 rgb(184 212 231 / 20%);
 }
-.bodypage-div-ulC-ul img{
+
+.bodypage-div-ulC-ul img {
     margin-left: 105px;
 }
-.bodypage-div-ulC-div-div{
+
+.bodypage-div-ulC-div-div {
     position: relative;
     left: 55px;
+}
+
+.bodypage-divA-div {
+    font-size: 24px;
+    position: relative;
+    left: -35%;
+    color: #697a8c;
+}
+
+.bodypage-divA {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.bodypage-divB-div {
+    margin-top: 30px;
+}
+
+.bodypage-divB-div span {
+    margin-right: 2%;
+}
+
+.bodypage-divB-div-span {
+    position: relative;
+    top: 10px;
+}
+
+.bodypage-divD {
+    height: 510px;
+    background-color: black;
+    position: relative;
+    top: 70px;
+    left: -8px;
+    width: 102%;
+}
+
+.bodypage-divD ul {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bodypage-divD ul li {
+    margin-right: 70px;
+    vertical-align: text-top;
+    margin-top: 100px;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+}
+
+.bodypage-divD ul li p {
+    margin-top: 1px;
+    text-align: left;
+}
+
+.bodypage-divD-div {
+    bottom: -55px;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, .65);
+}
+
+.bodypage-divD-div span {
+    color: #1677ff;
 }
