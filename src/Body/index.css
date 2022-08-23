@@ -201,7 +201,7 @@
 .bodypage-divA-div {
     font-size: 24px;
     position: relative;
-    left: -35%;
+    left: -37%;
     color: #697a8c;
 }
 
@@ -215,7 +215,7 @@
 }
 
 .bodypage-divB-div span {
-    margin-right: 2%;
+    margin-right: 37px;
 }
 
 .bodypage-divB-div-span {
@@ -261,4 +261,7 @@
 
 .bodypage-divD-div span {
     color: #1677ff;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
