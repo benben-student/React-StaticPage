@@ -8,7 +8,7 @@ class FeatSpecial extends React.Component {
         return (
             <>
             <ul>
-                <p className="bodypage-div-ul-p">功能特性</p>
+                <p>功能特性</p>
                 <li>
                     <img src={imgB} />
                     <div><p>高性能</p></div>

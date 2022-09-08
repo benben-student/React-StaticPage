@@ -1,11 +1,22 @@
 import React from "react";
-import './style.css'
+import classNames from "classnames";
 class Button extends React.Component {
+    constructor(props) {
+        super(props)
+        console.log(props);
+    }
     render() {
+        const { children, btnType } = this.props
+        console.log(btnType);
+        let className=""
+        if (btnType === "primary") {
+            className = "antdm-btn antdm-btn-primary-bg"
+        } else {
+            className = "antdm-btn"
+        }
+
         return (
-            <div>
-                <button className="div-button-A">组件列表</button>
-            </div>
+            <button className={className}>{children}</button>
         )
     }
 }
