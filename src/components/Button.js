@@ -1,10 +1,11 @@
 import React from "react";
+import './style.css'
 class Button extends React.Component {
     render() {
         return (
-            <>
-                <button>组件列表</button>
-            </>
+            <div>
+                <button className="div-button-A">组件列表</button>
+            </div>
         )
     }
 }

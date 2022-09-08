@@ -1,0 +1,15 @@
+/* .{
+    color: white;
+    border: 1px solid #1677ff;
+    background-color: #1677ff;
+} */
+
+.div-button-A {
+        border: 1px solid #1677ff;
+    background-color: white;
+    color: #1677ff;
+    font-size: 16px;
+    height: 41px;
+    width: 130px;
+    border-radius: 25px;
+}
