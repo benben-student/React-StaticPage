@@ -1,30 +1,13 @@
 import React from "react";
 import imgA from "../Body/img/01.png"
-import imgB from "../Body/img/02.svg"
-import imgC from "../Body/img/03.svg"
-import imgD from "../Body/img/04.svg"
-import imgE from "../Body/img/05.svg"
-import imgF from "../Body/img/06.svg"
-import imgG from "../Body/img/07.svg"
-import imgH from "../Body/img/08.svg"
-import imgI from "../Body/img/09.svg"
-import imgJ from "../Body/img/10.svg"
-import imgK from "../Body/img/11.svg"
-import imgL from "../Body/img/12.svg"
-import imgM from "../Body/img/13.svg"
-import imgN from "../Body/img/14.svg"
-import imgO from "../Body/img/15.svg"
-import imgP from "../Body/img/16.svg"
-import imgW from "../Body/img/17.svg"
-import imgX from "../Body/img/02.png"
 import './index.css'
+import Button from "./Button";
+import FeatSpecial from "./FeatSpecial";
+import Development from "./Development";
+import Guide from "./Guide";
+import Ding from "./Ding";
+import Use from "./Use";
 class BodyPage extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            Symbol: ">"
-        }
-    }
     render() {
         return (
             <div className="bodypage">
@@ -34,8 +17,7 @@ class BodyPage extends React.Component {
                             <div className="bodypage-span-div-pA"><p>Ant Design Mobile</p></div>
                             <div><p className="bodypage-span-div-pB">探索移动端 Web 的体验极限</p></div>
                             <div className="bodypage-span-div-button">
-                                <button className="bodypage-span-div-button-buttonA">开始使用</button>
-                                <button className="bodypage-span-div-button-buttonB">组件列表</button>
+                                <Button />
                             </div>
                         </div>
                     </div>
@@ -44,123 +26,21 @@ class BodyPage extends React.Component {
                 <div className="bodypage-div--div-A">
 
                     <div>
-                        <ul>
-                            <p className="bodypage-div-ul-p">功能特性</p>
-                            <li>
-                                <img src={imgB} />
-                                <div><p>高性能</p></div>
-                                <p>无需配置，即可拥有最佳的包体积大小和最优的性能</p>
-                            </li>
-                            <li>
-                                <img src={imgC} />
-
-                                <div> <p>可定制</p></div>
-                                <p>基于 CSS 变量，可以灵活地调整组件外观或自由创造自己的主题</p>
-                            </li>
-                            <li>
-                                <img src={imgD} />
-
-                                <div><p>原子化</p></div>
-                                <p>每个组件提供的功能，恰到好处地满足业务所需</p>
-                            </li>
-                            <li>
-                                <img src={imgE} />
-
-                                <div> <p>流畅</p></div>
-                                <p>拥有流畅的手势交互和细致的动画展示，助力打造极致体验</p>
-                            </li>
-                        </ul>
+                        <FeatSpecial />
                     </div>
                 </div>
                 <div className="bodypage-div-ulB">
                     <div className="bodypage-div-ulB-div">
-                        <div>开发资源</div>
-                        <ul>
-                            <li>
-                                <span className="bodypage-div-ul-li-spanA">在线体验</span><span className="bodypage-div-ul-li-spanB">开始体验{this.state.Symbol}</span>
-                                <p>在 Codesandbox 上在线体验，无需安装和配置环境</p>
-                                <img src={imgF} />
-                            </li>
-                            <li>
-                                <span className="bodypage-div-ul-li-spanA">组件列表</span><span className="bodypage-div-ul-li-spanB">查看全部{this.state.Symbol}</span>
-                                <p>基于蚂蚁集团的众多业务实践，抽象构建出移动端资产库</p>
-                                <img src={imgG} />
-                            </li>
-                        </ul>
+                        <Development />
                     </div>
+                </div>
+                <Guide />
+                <div>
+                    <Use />
                 </div>
                 <div >
-                    <div className="bodypage-div-ulC">
-                        <div className="bodypage-div-ulC-div">
-                            <div className="bodypage-div-ulC-div-div">新手指引</div>
-                            <ul>
-                                <li className="bodypage-div-ulC-ul">
-                                    <li>
-                                        <span >快速上手</span>
-                                        <p>轻松两步，快速实现安装和引入组件，Ant Design Mobile 自动加载 CSS 样式文件</p>
-                                        <div >查看详情{this.state.Symbol}</div>
-                                    </li>
-                                    <img src={imgH} />
-                                </li>
-                                <li className="bodypage-div-ulC-ul">
-                                    <li>
-                                        <span >常见问题</span>
-                                        <p>我们为你整理了一些常见的问题，遇到疑问不妨先来查阅一下</p>
-                                        <div >FAQ{this.state.Symbol}</div>
-                                    </li>
-                                    <img src={imgI} />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className="bodypage-divA">
-                        <div className="bodypage-divA-div">谁在使用</div>
-                        <div className="bodypage-divB-div">
-                            <span><img src={imgJ} /></span>
-                            <span><img src={imgK} /></span>
-                            <span><img src={imgL} /></span>
-                            <span><img src={imgM} /></span>
-                            <span><img src={imgN} /></span>
-                            <span><img src={imgO} /></span>
-                            <span className="bodypage-divB-div-span"><img src={imgP} /></span>
-                            <span><img src={imgW} /></span>
-                        </div>
-                    </div>
-                </div>
-                <div className="bodypage-divD">
-                    <ul>
-                        <li>
-                            <p>Ant Design Mobile</p>
-                            <p>GitHub</p>
-                            <p>发布日志</p>
-                            <p>Roadmap</p>
-                            <p>参与贡献</p>
-                            <p>提问与反馈</p>
-                            <p>博客</p>
-                        </li>
-                        <li>
-                            <p>Ant Design</p>
-                            <p>Ant Design - 桌面端组件库</p>
-                            <p>Ant Design Pro - 中台解决方案</p>
-                            <p>Ant Motion - 设计动效</p>
-                            <p>Ant Design Charts</p>
-                        </li>
-                        <li>
-                            <p>更多产品</p>
-                            <p>ahooks - React Hooks 库</p>
-                            <p>Dumi - 组件/文档研发工具</p>
-                            <p>Kitchen - Sketch 工具集</p>
-                            <p>AntV - 蚂蚁数据可视化方案</p>
-                            <p>Egg - 企业级 Node Web 开发框架</p>
-                        </li>
-                        <li>
-                            <p>钉钉交流反馈群</p>
-                            <img height="273px" width="240px" src={imgX} />
-                        </li>
-                    </ul>
-                    <div className="bodypage-divD-div">Open-source MIT Licensed | Copyright © 2016-present Alipay.com | Powered by<span>dumi</span></div>
+                    <Ding />
+
                 </div>
             </div>
         )
